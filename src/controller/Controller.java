@@ -151,6 +151,7 @@ public class Controller implements Observable, Runnable {
                 System.out.println(player.getName() + " connecté");
 
                 //reconstruction du jeu
+                //Game Rebuilding
                 boardView.getRightVBox().getChildren().clear();
                 boardView.getRightVBox().getChildren().addAll(boardView.getInfosGame(), boardView.getPlayerScore(), cardGridView.createGrid(), boardView.getResult());
 
